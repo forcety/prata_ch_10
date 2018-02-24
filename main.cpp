@@ -11,10 +11,10 @@ int main(int argc, char *argv[])
 
     {
         BankAccount ba1;
-        //BankAccount first = BankAccount();
         BankAccount ba2 = BankAccount("Ivanov", "0001", 1000.0);
 
         ba2.addMoney(500.0);
+        ba2.subMoney(600.0);
         ba2.show();
 
         std::cout << "Done\n";

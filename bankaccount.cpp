@@ -43,11 +43,29 @@ void BankAccount::addMoney(double val)
 {
     if (val < 0)
     {
-        std::cout << "Value for adding money can't be negative"
+        std::cout << "Value for adding money can't be negative. "
                   << "Transaction is aborted.\n";
     }
     else
     {
         balance += val;
+    }
+}
+
+void BankAccount::subMoney(double val)
+{
+    if (val < 0)
+    {
+        std::cout << "Value for sub money can't be negative. "
+                  << "Transaction is aborted.\n";
+    }
+    else if (val > balance)
+    {
+        std::cout << "You can't sub money more than you have. "
+                  << "Transaction is aborted.\n";
+    }
+    else
+    {
+        balance -= val;
     }
 }
