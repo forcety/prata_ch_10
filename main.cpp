@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     {
         BankAccount ba1;
         BankAccount ba2 = BankAccount("Ivanov", "0001", 1000.0);
+        BankAccount ba3 = BankAccount("Petrov", "0002", 2000.0);
 
         ba2.addMoney(500.0);
         ba2.subMoney(600.0);
